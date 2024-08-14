@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сходство Spotify песен</title>
+    <script defer src="app.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+    <style>
+      .file-upload-label {
+          display: inline-block;
+          background-color: #FF5733;
+          color: white;
+          padding: 10px 20px;
+          font-size: 18px;
+          font-weight: bold;
+          border-radius: 5px;
+          border: 1px solid #FF5733;
+          cursor: pointer;
+          text-align: center;
+          text-decoration: none;
+          margin-bottom: 10px;
+      }
+
+      .file-upload-label:hover {
+          background-color: #FF6F4A;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Карта топ песен Spotify</h1>
+    <label for="uploadCsv" class="file-upload-label">Выберите CSV файл</label>
+    <input type="file" id="uploadCsv" accept=".csv" style="display: none;" />
+    <canvas id="canvas" width="1920" height="1080"></canvas>
+  </body>
+</html>
